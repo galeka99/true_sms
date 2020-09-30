@@ -1,0 +1,29 @@
+name: sms
+description: SMS library for Flutter applications. Its allow to send, receive, query sms messages, sms delivery and query contacts info. It exposes an easy and friendly API for developing a completely functional sms app in Flutter.
+version: 0.2.5
+author: "babariviere <babathriviere@gmail.com>"
+homepage: "https://github.com/babariviere/flutter_sms"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+environment:
+  sdk: ">=1.19.0 <3.0.0"
+
+analyzer:
+  strong-mode: true
+
+linter:
+  rules:
+    - camel_case_types
+    - hash_and_equals
+    - iterable_contains_unrelated_type
+    - list_remove_unrelated_type
+    - unrelated_type_equality_checks
+    - valid_regexps
+
+flutter:
+  plugin:
+    androidPackage: com.babariviere.sms
+    pluginClass: SmsPlugin
